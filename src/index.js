@@ -13,12 +13,6 @@ import { theme } from "./theme.js";
 import authentication from "@vvv-interactive/nftanvil-react/cjs/auth.js";
 authentication.setOptions({ cookie: true });
 
-window.lockdown({
-  //comes from lockdown.umd.min.js
-  consoleTaming: "unsafe", // Leave original start console in place
-  overrideTaming: "min",
-});
-
 ReactDOM.render(
   <>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
