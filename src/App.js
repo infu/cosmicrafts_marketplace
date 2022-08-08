@@ -7,19 +7,28 @@ import {
 } from "@vvv-interactive/nftanvil-react";
 import { nft_enter_code } from "@vvv-interactive/nftanvil-react/cjs/reducers/nft";
 import { Wallet } from "@vvv-interactive/nftanvil-react/cjs/components/Wallet";
-import { IconButton } from "@chakra-ui/react";
+import {
+  IconButton,
+  Flex,
+  Spacer,
+  Select,
+  Text,
+  Box,
+  Button,
+  Stack,
+  HStack,
+  Wrap,
+} from "@chakra-ui/react";
 
 import {
   Inventory,
   InventoryLarge,
 } from "@vvv-interactive/nftanvil-react/cjs/components/Inventory";
 
-import powered from "./assets/powered.dark.svg";
 import {
   MarketplaceLoad,
   MarketplaceFilters,
 } from "@vvv-interactive/nftanvil-react/cjs/components/Marketplace";
-import { Flex, Spacer } from "@chakra-ui/react";
 import { NFTPage } from "@vvv-interactive/nftanvil-react/cjs/components/NFT";
 
 import { ToastContainer } from "react-toastify";
@@ -31,8 +40,8 @@ import {
   useParams,
 } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import { Box, Button, Stack, HStack, Wrap } from "@chakra-ui/react";
-import { Select, Text } from "@chakra-ui/react";
+import powered from "./assets/powered.dark.svg";
+
 import logo from "./assets/logo.svg";
 import { CloseIcon } from "@chakra-ui/icons";
 
